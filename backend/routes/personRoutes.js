@@ -4,12 +4,6 @@ import Person from '../models/personModel.js';
 
 const personRouter = express.Router();
 
-
-/* personRouter.get('/', async (req, res) => {
-    const people = await Person.find();
-    res.send(people);
-});
- */
 personRouter.get('/', async (req, res) => {
     const people = await Person.find({})
     .then(data => {

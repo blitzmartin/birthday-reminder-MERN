@@ -8,7 +8,7 @@ const yyyy = today.getFullYear();
 const day = dd + mm;
 
 export default function List({ people }) {
-  console.log(people);
+
   const filtered = people.filter((person) => {
     return person.bday === day;
   });

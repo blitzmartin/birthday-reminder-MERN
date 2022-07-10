@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div>
-      <Container className="pink-box">
+      <div className="pink-box">
         <div className="header">
           <h1>Birthday Reminder</h1>
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
           <p>{counter} birthdays today</p>
           <List people={people} />
         </div>
-      </Container>
+      </div>
     </div>
   );
 }
