@@ -52,6 +52,11 @@ h1 {
   text-align: center;
 }
 
+.white-box, h2 {
+  color: var(--dark-col);
+  margin-bottom: 2.3rem;
+}
+
 .btn-pink {
   background-color: var(--primary-col);
   color: var(--light-col);
@@ -91,4 +96,8 @@ h1 {
 
 .footer, p {
  font-size: 0.8rem;
+}
+
+.left {
+  text-align: left;
 }

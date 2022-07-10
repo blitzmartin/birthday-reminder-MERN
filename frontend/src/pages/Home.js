@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-//import data from "../data.js";
-import axios from "axios";
-import Container from "react-bootstrap/Container";
 import List from "../components/List";
 
 const today = new Date();
