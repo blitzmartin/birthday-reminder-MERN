@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Prata&display=swap');
+
+:root {
+  --light-col: #fff;
+  --dark-col: #161616;
+  --primary-col: #ce6cb5;
+  --accent-col: #17a4bd;
+  --primary-font: "Arvo", serif;
+  --accent-font: "Prata", serif;
+}
+
+.App {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  color: var(--dark-col);
+  background-color: var(--light-col);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--light-col);
+  font-family: var(--accent-font);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+.header {
+  margin: 1rem 0 5rem 0;
+}
+
+.pink-box {
+  background-color: var(--primary-col);
+  margin: 3rem auto;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.white-box {
+  background-color: var(--light-col);
+  color: var(--dark-col);
+  border-radius: 4px;
+  width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.btn-pink {
+  background-color: var(--primary-col);
+  color: var(--light-col);
+  border: none;
+  margin-top: 10px;
+}
+
+.person {
+ padding: 20px;
+ margin: 0 auto;
+}
+
+.person > * {
+  margin: 0.5rem;
+  text-align: left;
+}
+
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--primary-col);
+  box-shadow: var(--light-shadow);
+}
