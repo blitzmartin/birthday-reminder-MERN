@@ -83,4 +83,12 @@ h1 {
     margin: 3rem 0;
     padding: 3%;
   }
+  .white-box {
+    width: 90%;
+  }
+
+}
+
+.footer, p {
+ font-size: 0.8rem;
 }
