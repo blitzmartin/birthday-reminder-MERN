@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import List from "../components/List";
 import ListWithAll from "../components/ListWithAll";
 
 export default function Contacts() {
