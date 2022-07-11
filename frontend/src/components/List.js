@@ -29,7 +29,7 @@ export default function List({ people }) {
             <Card.Img src={person.image} alt={person.name} />
             <div>
               <Card.Title>{person.name}</Card.Title>
-              <Card.Subtitle>{age}</Card.Subtitle>
+              <Card.Subtitle>age {age}</Card.Subtitle>
             </div>
           </Card>
         );
