@@ -38,7 +38,7 @@ h1 {
   margin: 3rem 10%;
   padding: 3%;
   border-radius: 5px;
-  height: 100vh
+  height: 100vh;
 }
 
 .white-box {
@@ -52,16 +52,21 @@ h1 {
   text-align: center;
 }
 
+.white-box-lg {
+  background-color: var(--light-col);
+  color: var(--dark-col);
+  border-radius: 4px;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
 .white-box, h2 {
   color: var(--dark-col);
   margin-bottom: 2.3rem;
-}
-
-.btn-pink {
-  background-color: var(--primary-col);
-  color: var(--light-col);
-  border: none;
-  margin-top: 10px;;
 }
 
 .person {
@@ -79,7 +84,7 @@ h1 {
   height: 75px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid var(--primary-col);
+  border: 3px solid var(--primary-col);
   box-shadow: var(--light-shadow);
 }
 
@@ -93,6 +98,14 @@ h1 {
   }
 
 }
+
+.btn-pink {
+  background-color: var(--primary-col);
+  color: var(--light-col);
+  border: none;
+  margin-top: 10px;;
+}
+
 
 .footer, p {
  font-size: 0.8rem;
