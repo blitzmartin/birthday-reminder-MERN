@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import personRouter from './routes/personRoutes.js';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -14,6 +15,29 @@ mongoose.connect(process.env.DB_SERVER)
     });
 
 const app = express();
+
+// ========== CORS SETUP ==========
+
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Credentials", true);
+    res.header("Access-Control-Allow-Origin", req.headers.origin);
+    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept"
+    );
+    next();
+   });
+   
+   app.use(
+    cors({
+      credentials: true,
+      allowedHeaders: ["Origin, X-Requested-With, Content-Type, Accept"],
+    })
+   );
+   app.set("trust proxy", 1);
+   
+   // =================================
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
