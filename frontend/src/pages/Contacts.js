@@ -23,7 +23,7 @@ export default function Contacts() {
     <div>
       <div className="pink-box">
         <div className="header">
-          <h1>Birthday Reminder</h1>
+          <h1>My Contacts</h1>
         </div>
         <div className="white-box-lg">
             <ListWithAll people={people} />
