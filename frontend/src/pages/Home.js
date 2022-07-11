@@ -43,7 +43,6 @@ export default function Home() {
           <h1>Birthday Reminder</h1>
         </div>
         <div className="d-grid gap-2 white-box">
-          <p>{counter} birthdays today</p>
           <List people={people} />
         </div>
       </div>

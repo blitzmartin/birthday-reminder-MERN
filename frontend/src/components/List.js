@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Card from "react-bootstrap/Card";
 
 const today = new Date();
@@ -8,11 +8,17 @@ const yyyy = today.getFullYear();
 const day = dd + mm;
 
 export default function List({ people }) {
+  const [counter, setCounter] = useState(0);
   const filtered = people.filter((person) => {
     return person.bday === day;
   });
+  useEffect(() => {
+    setCounter(filtered.length);
+  }, [filtered, counter])
+
   return (
     <>
+    <p>{counter} birthdays today</p>
       {filtered.map((person) => {
         const age = yyyy - person.bornYear;
         return (
